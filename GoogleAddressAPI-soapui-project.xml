@@ -3,7 +3,6 @@
 
 def jsonSlurper = new JsonSlurper()
 
-
 def response = context.expand('${RequestforLocation#Response}')
 
 def locationData = jsonSlurper.parseText(response)
